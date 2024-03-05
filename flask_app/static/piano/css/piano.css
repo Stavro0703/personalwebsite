@@ -1,0 +1,136 @@
+/* Piano Page CSS */
+
+#piano-poem{
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    margin: 4vh 15vw 4vh 15vw;
+}
+
+#piano-hr{
+    margin-bottom: 7vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+#piano-content{
+    width: calc(1em + 55vw);
+    height: calc(1em + 55vh);
+    background-color: #2f2f41;
+    border-style: solid;
+    border-top-left-radius: 8em;
+    border-width: .25em;
+    border-top-right-radius: 8em;
+    border-color: #1f1c1c;
+    color: #fff;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#piano-name{
+    width: 100%;
+    text-align: center;
+    margin-top: calc(1em + 1.5vh);
+    margin-bottom: calc(1em + 1.5vh);
+    font-family: cursive;
+    font-size: calc(1em + 1.65vw);
+}
+
+#piano-keys{
+    width: calc(1em + 40.2vw);
+    height: calc(1em + 50.1vh);
+    display: flex;
+    margin: auto;
+    padding: 0;  
+}
+
+/* Styling for white keys */
+#piano-keys .white-key{
+    width: calc(1em + 3.5vw);
+    height: calc(1em + 37vh);
+    background-color: #fff;
+    border-radius: 1em;
+    border-width: .4em;
+    border-color: #1f1c1c;
+    border-style: solid;
+
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+#piano-keys .white-key .key-text{
+    color: #000000;
+    font-size: calc(1em + 1.75vw);
+    text-align: center;
+    margin-top: calc(1em + 27vh);
+}
+
+/* Black key styling */
+#piano-keys .black-key{
+    width: calc(1em + 1.4vw);
+    height: calc(1em + 24vh);
+    background-color: #1f1c1c;
+    border-radius: 1em;
+    border-width: .3em;
+    border-color: #000000;
+    border-style: solid;
+
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+}
+
+#piano-keys .black-key .key-text{
+    font-size: calc(1em + .75vw);
+    text-align: center;
+    margin-top: calc(1em + 17.75vh);
+}
+
+/* All black keys margins */
+#W-key{
+    margin-left: calc(1em + 1.6vw);
+}
+#E-key{
+    margin-left: calc(1em + 5.7vw);
+}
+#T-key{
+    margin-left: calc(1em + 13.9vw);
+}
+#Y-key{
+    margin-left: calc(1em + 17.9vw);
+}
+#U-key{
+    margin-left: calc(1em + 22.1vw);
+}
+#O-key{
+    margin-left: calc(1em + 30.2vw);
+}
+#P-key{
+    margin-left: calc(1em + 34.3vw);
+}
+
+#piano-keys .key-text{
+    display: none;
+}
+
+/* Handles text appearing when mouse hovers over keys */
+#piano-keys:hover .key-text{
+    display: flex;
+    margin-left: calc(.25em + .1vw);
+    font-size: 2vw;
+}
+
+/* Handles fading in animation for the great old one */
+@keyframes fadeInAnimation {
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}

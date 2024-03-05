@@ -1,0 +1,10 @@
+/* Banner Styling */
+
+.bannerimage{
+    
+    width: calc(1em + 100%);
+    height: calc(1em + 10vh);
+
+    background-image: url("/static/main/images/banner.jpg");
+    background-size: cover;
+}

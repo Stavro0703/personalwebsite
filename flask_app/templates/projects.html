@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Stavro Polis</title>
+
+    <link rel="icon" href="/static/main/images/favicon.ico">
+    <link rel="stylesheet" href="/static/main/css/main.css">
+    <link rel="stylesheet" href="/static/main/css/header.css">
+    <link rel="stylesheet" href="/static/main/css/footer.css">
+    <link rel="stylesheet" href="/static/main/css/navbar.css">
+</head>
+<body class="mainbody">
+
+<!-- Header Content -->
+
+<header>
+    <div class="bannerimage"></div>
+</header>
+
+<!-- Navbar Content -->
+
+<nav class="navbar">
+    <div class="welcome-text">Welcome</div>
+
+    <input type="checkbox" id="menu-toggle" title="Handles mobile viewing menu">
+
+    <label id="mt-label" for="menu-toggle">
+        <img id="menu-bar" src="/static/main/images/menu-bar.png" alt="menu bar" loading="lazy">
+    </label>
+
+    <ul class="directories">
+        <li>
+            <a href="/home.html" class="directory"> Home</a>
+        </li>
+        <li>
+            <a href="/projects.html" class="directory"> Projects</a>
+        </li>
+        <li>
+            <a href="/home.html" class="directory"> Resume</a>
+        </li>
+        <li>
+            <a class="directory" id="linkedin-text" href="https://www.linkedin.com/in/stavro-polis-a6555226b/" target="_blank">
+            <img class="linkedin-img" src="/static/main/images/social-linkedin.png" alt="LinkedIn logo" loading="lazy">
+            LinkedIn
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+
+<main>
+    <div class="proj-intro">
+        <h1>Below is a list of projects I worked on in CSE 477:</h1>
+        <p>Click an image, or hyperlink in the description to learn more.</p>
+        <hr class="proj-hr">
+    </div>
+
+    <div class="proj-content">
+        <a class="proj-img" href="/piano.html"></a>
+        <div class="proj-description">
+            <h1>Javascript Piano</h1>
+            <p>As part of my first Homework assignment in CSE477, I developed
+                an interactive piano build in pure HTML, CSS and Javascript.
+                This tool, in addition to my webpage, highlights my ability to
+                build beautiful and mobile-friendly front-end applications.
+                <a href="/piano.html">Click here to see and play!</a>
+            </p>
+        </div>
+    </div>
+
+    <hr class="proj-hr">
+
+    <h1 id="coming-soon">More Coming Soon!</h1>
+</main>
+
+<!-- Footer Content -->
+
+<footer class="footer">
+    &copy 2024 Stavro Polis 
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Home Page and Project CSS */
+
+/* Home Page */
+.mainbody {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    margin: auto;
+    padding: 0;
+
+    width: calc(1em + 80vw);
+    min-height: calc(1em + 75vh); 
+}
+
+.main-content{
+    width: calc(1em + 80vw);
+    height: calc(1em + 50vh);
+    max-width: 80vw;
+    max-height: 50vh;
+    margin: calc(1em + 3.5vh) auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.picture-me{
+    flex: 5;
+    outline: 3px solid #181818;
+    margin-right: calc(1em + .5vw);
+    background-image: url(/static/main/images/me4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me{
+    flex: 5;
+    overflow: scroll;
+}
+
+.about-me h1{
+    font-size: calc(1em + 2.5vh);
+}
+
+.about-me p{
+    font-size: calc(1em + .5vh);
+}
+
+.fun-fact{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+/* Project Page */
+
+.proj-intro{
+    text-align: center;
+}
+
+.proj-intro p{
+    margin-top: 0;
+    font-size: large;
+}
+
+.proj-hr{
+    margin: 6vh 5em 3vh 5em
+}
+
+.proj-content{
+        width: calc(1em + 80vw);
+        height: calc(1em + 50vh);
+        max-width: 80vw;
+        max-height: 50vh;
+        margin: calc(1em + 3.5vh) auto;
+
+        display: flex;
+        flex-direction: row;
+}
+
+.proj-img{
+    background-image: url(/static/main/images/piano.jpeg);
+    flex: 5;
+    outline: 3px solid #181818;
+    margin-right: calc(1em + .5vw);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.proj-description{
+    flex: 5;
+    overflow: scroll;
+}
+
+.proj-description h1{
+    font-size: calc(1em + 2.5vh);
+    margin-top: calc(1em + 10vh);
+}
+
+.proj-description p{
+    font-size: calc(1em + .5vh);
+}
+
+#coming-soon{
+    text-align: center;
+}
+
+/* Handles mobile viewing for main and project pages */
+@media screen and (max-width: 650px){
+
+    .main-content{
+        flex-direction: column;
+    }
+    .about-me h1{
+        text-align: center;
+    }
+    .about-me p{
+        text-align: center;
+    }
+
+    /* Projects page mobile css */
+
+    .proj-content{
+        flex-direction: column;
+        margin-bottom: calc(1em + 5vh);
+    }
+    .proj-description h1{
+        margin: calc(.5em + 1vh) 0;
+        text-align: center;
+    }
+    .project-description p{
+        overflow: scroll;
+        text-align: center;
+    }
+}
